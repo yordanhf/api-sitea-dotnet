@@ -1,0 +1,22 @@
+# Compiled files
+bin/
+obj/
+
+# User-specific files
+.vs/
+*.user
+*.suo
+
+# Logs and databases
+*.db
+logs/
+sqlite/
+
+# Build results
+*.dll
+*.exe
+
+# Others
+*.cache
+*.pdb
+*.log

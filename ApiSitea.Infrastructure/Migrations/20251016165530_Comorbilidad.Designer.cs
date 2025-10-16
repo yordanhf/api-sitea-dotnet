@@ -3,6 +3,7 @@ using System;
 using ApiSitea.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiSitea.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251016165530_Comorbilidad")]
+    partial class Comorbilidad
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.9");
@@ -85,38 +88,6 @@ namespace ApiSitea.Infrastructure.Migrations
                     b.ToTable("Comorbilidades");
                 });
 
-            modelBuilder.Entity("ApiSitea.Domain.Entities.Diagnostico", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Diagnosticos");
-                });
-
-            modelBuilder.Entity("ApiSitea.Domain.Entities.Fortaleza", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Fortalezas");
-                });
-
             modelBuilder.Entity("ApiSitea.Domain.Entities.Medicamento", b =>
                 {
                     b.Property<Guid>("Id")
@@ -131,54 +102,6 @@ namespace ApiSitea.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Medicamentos");
-                });
-
-            modelBuilder.Entity("ApiSitea.Domain.Entities.TipoExamen", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TiposExamen");
-                });
-
-            modelBuilder.Entity("ApiSitea.Domain.Entities.TipoInterconsulta", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("TiposInterconsulta");
-                });
-
-            modelBuilder.Entity("ApiSitea.Domain.Entities.VinculoInstitucional", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("VinculosInstitucionales");
                 });
 #pragma warning restore 612, 618
         }

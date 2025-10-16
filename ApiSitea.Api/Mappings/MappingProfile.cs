@@ -23,6 +23,31 @@
             CreateMap<CClinica, CClinicaDto>().ReverseMap();
             CreateMap<CClinicaCreateDto, CClinica>();
             CreateMap<CClinicaUpdateDto, CClinica>();
+
+            CreateMap<Comorbilidad, ComorbilidadDto>().ReverseMap();
+            CreateMap<ComorbilidadCreateDto, Comorbilidad>();
+            CreateMap<ComorbilidadUpdateDto, Comorbilidad>();
+
+            CreateMap<Diagnostico, DiagnosticoDto>().ReverseMap();
+            CreateMap<DiagnosticoCreateDto, Diagnostico>();
+            CreateMap<DiagnosticoUpdateDto, Diagnostico>();
+
+            CreateMap<Fortaleza, FortalezaDto>().ReverseMap();
+            CreateMap<FortalezaCreateDto, Fortaleza>();
+            CreateMap<FortalezaUpdateDto, Fortaleza>();
+
+            CreateMap<TipoInterconsulta, TipoInterconsultaDto>().ReverseMap();
+            CreateMap<TipoInterconsultaCreateDto, TipoInterconsulta>();
+            CreateMap<TipoInterconsultaUpdateDto, TipoInterconsulta>();
+
+            CreateMap<TipoExamen, TipoExamenDto>().ReverseMap();
+            CreateMap<TipoExamenCreateDto, TipoExamen>();
+            CreateMap<TipoExamenUpdateDto, TipoExamen>();
+
+            CreateMap<VinculoInstitucional, VinculoInstitucionalDto>().ReverseMap();
+            CreateMap<VinculoInstitucionalCreateDto, VinculoInstitucional>();
+            CreateMap<VinculoInstitucionalUpdateDto, VinculoInstitucional>();
+
         }
-        }
+    }
     }

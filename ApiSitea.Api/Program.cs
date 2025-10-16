@@ -18,21 +18,25 @@ var builder = WebApplication.CreateBuilder(args);
 // ==================================================
 // LOGGING CONFIGURATION
 // ==================================================
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
-builder.Logging.AddDebug();
-builder.Logging.AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.Information);
-builder.Logging.AddFilter("Microsoft", LogLevel.Warning);
-builder.Logging.AddFilter("System", LogLevel.Warning);
+//builder.Logging.ClearProviders();
+//builder.Logging.AddConsole();
+//builder.Logging.AddDebug();
+//builder.Logging.AddFilter("Microsoft.EntityFrameworkCore.Database.Command", LogLevel.Information);
+//builder.Logging.AddFilter("Microsoft", LogLevel.Warning);
+//builder.Logging.AddFilter("System", LogLevel.Warning);
 
 // Serilog setup
 Log.Logger = new LoggerConfiguration()
     .Enrich.FromLogContext()
+    .MinimumLevel.Information() // puedes subirlo a Information en producción
     .WriteTo.Console()
     .WriteTo.File("logs/api-sitea-.log", rollingInterval: RollingInterval.Day)
     .CreateLogger();
 
 builder.Host.UseSerilog();
+
+
+
 
 // ==================================================
 // CONTROLLERS + FLUENTVALIDATION
@@ -78,6 +82,19 @@ builder.Services.AddScoped<ICentroRepository, CentroRepository>();
 builder.Services.AddScoped<ICentroService, CentroService>();
 builder.Services.AddScoped<ICClinicaRepository, CClinicaRepository>();
 builder.Services.AddScoped<ICClinicaService, CClinicaService>();
+builder.Services.AddScoped<IComorbilidadRepository, ComorbilidadRepository>();
+builder.Services.AddScoped<IComorbilidadService, ComorbilidadService>();
+builder.Services.AddScoped<IDiagnosticoRepository, DiagnosticoRepository>();
+builder.Services.AddScoped<IDiagnosticoService, DiagnosticoService>();
+builder.Services.AddScoped<IFortalezaRepository, FortalezaRepository>();
+builder.Services.AddScoped<IFortalezaService, FortalezaService>();
+builder.Services.AddScoped<ITipoInterconsultaRepository, TipoInterconsultaRepository>();
+builder.Services.AddScoped<ITipoInterconsultaService, TipoInterconsultaService>();
+builder.Services.AddScoped<ITipoExamenRepository, TipoExamenRepository>();
+builder.Services.AddScoped<ITipoExamenService, TipoExamenService>();
+builder.Services.AddScoped<IVinculoInstitucionalRepository, VinculoInstitucionalRepository>();
+builder.Services.AddScoped<IVinculoInstitucionalService, VinculoInstitucionalService>();
+
 
 
 // ==================================================

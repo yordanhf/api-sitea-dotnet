@@ -51,5 +51,12 @@ namespace ApiSitea.Application.Services
         }
 
         public async Task DeleteAsync(Guid id) => await _repo.DeleteAsync(id);
+
+        // 🔍 Nuevo método
+        public async Task<IEnumerable<MedicamentoDto>> SearchByNameAsync(string searchTerm)
+        {
+            var items = await _repo.SearchByNameAsync(searchTerm);
+            return _mapper.Map<IEnumerable<MedicamentoDto>>(items);
+        }
     }
 }

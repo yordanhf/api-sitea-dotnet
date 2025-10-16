@@ -15,5 +15,7 @@ namespace ApiSitea.Domain.Interfaces
         Task<Medicamento> AddAsync(Medicamento medicamento);
         Task<Medicamento> UpdateAsync(Medicamento medicamento);
         Task DeleteAsync(Guid id);
+
+        Task<IEnumerable<Medicamento>> SearchByNameAsync(string searchTerm);
     }
 }

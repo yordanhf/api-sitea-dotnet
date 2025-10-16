@@ -1,36 +1,35 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Swashbuckle.AspNetCore.Annotations;
-using ApiSitea.Application.DTOs;
+﻿using ApiSitea.Application.DTOs;
 using ApiSitea.Application.Interfaces;
+using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace ApiSitea.Api.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class MedicamentoController : ControllerBase
+    public class AntecedentePPPController : ControllerBase
     {
-        private readonly IMedicamentoService _service;
-        private readonly ILogger<MedicamentoController> _logger;
+        private readonly IAntecedentePPPService _service;
+        private readonly ILogger<AntecedentePPPController> _logger;
 
-        public MedicamentoController(IMedicamentoService service, ILogger<MedicamentoController> logger)
+        public AntecedentePPPController(IAntecedentePPPService service, ILogger<AntecedentePPPController> logger)
         {
             _service = service;
             _logger = logger;
         }
 
         [HttpGet]
-        [SwaggerOperation(Summary = "Obtiene todos los medicamentos")]
-        [ProducesResponseType(typeof(IEnumerable<MedicamentoDto>), 200)]
+        [SwaggerOperation(Summary = "Obtiene todos los antecedentes PPP")]
+        [ProducesResponseType(typeof(IEnumerable<AntecedentePPPDto>), 200)]
         public async Task<IActionResult> GetAll()
         {
-            _logger.LogInformation("Solicitando todos los medicamentos");
             var items = await _service.GetAllAsync();
             return Ok(items);
         }
 
         [HttpGet("{id:guid}")]
-        [SwaggerOperation(Summary = "Obtiene un medicamento por id")]
-        [ProducesResponseType(typeof(MedicamentoDto), 200)]
+        [SwaggerOperation(Summary = "Obtiene un antecedente PPP por id")]
+        [ProducesResponseType(typeof(AntecedentePPPDto), 200)]
         [ProducesResponseType(404)]
         public async Task<IActionResult> GetById(Guid id)
         {
@@ -39,27 +38,26 @@ namespace ApiSitea.Api.Controllers
         }
 
         [HttpPost]
-        [SwaggerOperation(Summary = "Crea un medicamento")]
-        [ProducesResponseType(typeof(MedicamentoDto), 201)]
-        [ProducesResponseType(400)]
-        public async Task<IActionResult> Create(MedicamentoCreateDto dto)
+        [SwaggerOperation(Summary = "Crea un antecedente PPP")]
+        [ProducesResponseType(typeof(AntecedentePPPDto), 201)]
+        public async Task<IActionResult> Create(AntecedentePPPCreateDto dto)
         {
             var created = await _service.CreateAsync(dto);
             return CreatedAtAction(nameof(GetById), new { id = created.Id }, created);
         }
 
         [HttpPut("{id:guid}")]
-        [SwaggerOperation(Summary = "Actualiza un medicamento")]
-        [ProducesResponseType(typeof(MedicamentoDto), 200)]
+        [SwaggerOperation(Summary = "Actualiza un antecedente PPP")]
+        [ProducesResponseType(typeof(AntecedentePPPDto), 200)]
         [ProducesResponseType(404)]
-        public async Task<IActionResult> Update(Guid id, MedicamentoUpdateDto dto)
+        public async Task<IActionResult> Update(Guid id, AntecedentePPPDto dto)
         {
             var updated = await _service.UpdateAsync(id, dto);
             return Ok(updated);
         }
 
         [HttpDelete("{id:guid}")]
-        [SwaggerOperation(Summary = "Elimina un medicamento")]
+        [SwaggerOperation(Summary = "Elimina un antecedente PPP")]
         [ProducesResponseType(204)]
         [ProducesResponseType(404)]
         public async Task<IActionResult> Delete(Guid id)
@@ -68,9 +66,10 @@ namespace ApiSitea.Api.Controllers
             return NoContent();
         }
 
+        // 🔍 Nuevo método de búsqueda
         [HttpGet("buscar")]
-        [SwaggerOperation(Summary = "Busca medicamentos por nombre parcial")]
-        [ProducesResponseType(typeof(IEnumerable<MedicamentoDto>), 200)]
+        [SwaggerOperation(Summary = "Busca antecedentes PPP por nombre parcial")]
+        [ProducesResponseType(typeof(IEnumerable<AntecedentePPPDto>), 200)]
         public async Task<IActionResult> SearchByName([FromQuery] string nombre)
         {
             if (string.IsNullOrWhiteSpace(nombre))
@@ -79,6 +78,5 @@ namespace ApiSitea.Api.Controllers
             var items = await _service.SearchByNameAsync(nombre);
             return Ok(items);
         }
-
     }
 }

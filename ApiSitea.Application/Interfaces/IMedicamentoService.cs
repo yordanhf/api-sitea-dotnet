@@ -14,5 +14,7 @@ namespace ApiSitea.Application.Interfaces
         Task<MedicamentoDto> CreateAsync(MedicamentoCreateDto dto);
         Task<MedicamentoDto> UpdateAsync(Guid id, MedicamentoUpdateDto dto);
         Task DeleteAsync(Guid id);
+
+        Task<IEnumerable<MedicamentoDto>> SearchByNameAsync(string searchTerm);
     }
 }

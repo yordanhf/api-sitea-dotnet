@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ApiSitea.Application.DTOs
+namespace ApiSitea.Domain.Entities
 {
-    public class MedicamentoUpdateDto
+    public class TipoExamen
     {
+        public Guid Id { get; set; } = Guid.NewGuid();
         public string Nombre { get; set; } = string.Empty;
     }
 }

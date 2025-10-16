@@ -17,7 +17,7 @@ namespace ApiSitea.Tests
         {
             var config = new MapperConfiguration(cfg =>
             {
-                cfg.CreateMap<Medicamento, MedicamentoDto>().ReverseMap();
+                cfg.CreateMap<Medicamento, MedicamentoDtos>().ReverseMap();
                 cfg.CreateMap<MedicamentoCreateDto, Medicamento>();
                 cfg.CreateMap<MedicamentoUpdateDto, Medicamento>();
             });

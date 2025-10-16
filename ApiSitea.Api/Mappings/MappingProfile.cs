@@ -8,9 +8,17 @@
         {
             public MappingProfile() 
             {
-                CreateMap<Medicamento, MedicamentoDto>().ReverseMap();
-                CreateMap<MedicamentoCreateDto, Medicamento>();
-                CreateMap<MedicamentoUpdateDto, Medicamento>();
+             CreateMap<Medicamento, MedicamentoDto>().ReverseMap();
+             CreateMap<MedicamentoCreateDto, Medicamento>();
+             CreateMap<MedicamentoUpdateDto, Medicamento>();
+
+             CreateMap<AntecedentePPP, AntecedentePPPDto>().ReverseMap();
+             CreateMap<AntecedentePPPCreateDto, AntecedentePPP>();
+             CreateMap<AntecedentePPPDto, AntecedentePPP>();
+
+             CreateMap<Centro, CentroDto>().ReverseMap();
+             CreateMap<CentroCreateDto, Centro>();
+             CreateMap<CentroUpdateDto, Centro>();
             }
         }
     }

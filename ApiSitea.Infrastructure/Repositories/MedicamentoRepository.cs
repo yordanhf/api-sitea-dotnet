@@ -64,5 +64,14 @@ namespace ApiSitea.Infrastructure.Repositories
             _context.Medicamentos.Remove(entity);
             await _context.SaveChangesAsync();
         }
+
+        // 🔍 Nuevo método: búsqueda parcial por nombre
+        public async Task<IEnumerable<Medicamento>> SearchByNameAsync(string searchTerm)
+        {
+            return await _context.Medicamentos
+                .AsNoTracking()
+                .Where(m => EF.Functions.Like(m.Nombre.ToLower(), $"%{searchTerm.ToLower()}%"))
+                .ToListAsync();
+        }
     }
 }

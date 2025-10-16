@@ -72,6 +72,11 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // ==================================================
 builder.Services.AddScoped<IMedicamentoRepository, MedicamentoRepository>();
 builder.Services.AddScoped<IMedicamentoService, MedicamentoService>();
+builder.Services.AddScoped<IAntecedentePPPRepository, AntecedentePPPRepository>();
+builder.Services.AddScoped<IAntecedentePPPService, AntecedentePPPService>();
+builder.Services.AddScoped<ICentroRepository, CentroRepository>();
+builder.Services.AddScoped<ICentroService, CentroService>();
+
 
 // ==================================================
 // SWAGGER
@@ -105,7 +110,8 @@ app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiSitea v1");
-    c.RoutePrefix = string.Empty; // Swagger en la raíz (opcional)
+    c.RoutePrefix = "docs"; // Ahora estará en /docs
+    
 });
 
 app.UseHttpsRedirection();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ApiSitea.Domain.Entities
 {
-    public class Cclinicas
+    public class CClinica
     {
         public Guid Id { get; set; } = Guid.NewGuid();
         public string Nombre { get; set; } = string.Empty;

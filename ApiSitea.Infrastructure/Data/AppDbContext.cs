@@ -18,6 +18,7 @@ namespace ApiSitea.Infrastructure.Data
         public DbSet<Medicamento> Medicamentos => Set<Medicamento>();
         public DbSet<AntecedentePPP> AntecedentesPPP => Set<AntecedentePPP>();
         public DbSet<Centro> Centros => Set<Centro>();
+        public DbSet<CClinica> CClinicas => Set<CClinica>();
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -38,6 +39,12 @@ namespace ApiSitea.Infrastructure.Data
                 b.HasKey(x => x.Id);
                 b.Property(x => x.Nombre).IsRequired().HasMaxLength(200);
                 b.Property(x => x.Descripcion).HasMaxLength(1000).IsRequired(false);
+            });
+
+            modelBuilder.Entity<CClinica>(b =>
+            {
+                b.HasKey(x => x.Id);
+                b.Property(x => x.Nombre).IsRequired().HasMaxLength(200);
             });
 
             base.OnModelCreating(modelBuilder);            

@@ -76,6 +76,8 @@ builder.Services.AddScoped<IAntecedentePPPRepository, AntecedentePPPRepository>(
 builder.Services.AddScoped<IAntecedentePPPService, AntecedentePPPService>();
 builder.Services.AddScoped<ICentroRepository, CentroRepository>();
 builder.Services.AddScoped<ICentroService, CentroService>();
+builder.Services.AddScoped<ICClinicaRepository, CClinicaRepository>();
+builder.Services.AddScoped<ICClinicaService, CClinicaService>();
 
 
 // ==================================================

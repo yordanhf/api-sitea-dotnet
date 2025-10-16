@@ -19,6 +19,10 @@
              CreateMap<Centro, CentroDto>().ReverseMap();
              CreateMap<CentroCreateDto, Centro>();
              CreateMap<CentroUpdateDto, Centro>();
-            }
+
+            CreateMap<CClinica, CClinicaDto>().ReverseMap();
+            CreateMap<CClinicaCreateDto, CClinica>();
+            CreateMap<CClinicaUpdateDto, CClinica>();
+        }
         }
     }

@@ -12,6 +12,8 @@ namespace ApiSitea.Domain.Entities
         public string Nombre { get; set; } = string.Empty;
         public string? Descripcion { get; set; }
 
+        public ICollection<Paciente> Pacientes { get; set; } = new List<Paciente>();
+
 
     }
 }

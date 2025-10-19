@@ -46,7 +46,18 @@
 
             CreateMap<VinculoInstitucional, VinculoInstitucionalDto>().ReverseMap();
             CreateMap<VinculoInstitucionalCreateDto, VinculoInstitucional>();
-            CreateMap<VinculoInstitucionalUpdateDto, VinculoInstitucional>();
+            CreateMap<VinculoInstitucionalUpdateDto, VinculoInstitucional>();         
+
+            CreateMap<Paciente, PacienteDto>()
+               .ForMember(dest => dest.ProvinciaNombre, opt => opt.MapFrom(src => src.Provincia.Nombre))
+               .ForMember(dest => dest.MunicipioNombre, opt => opt.MapFrom(src => src.Municipio.Nombre))
+               .ForMember(dest => dest.MunicipioNombre, opt => opt.MapFrom(src => src.Municipio.Nombre))
+               .ForMember(dest => dest.CentroNombre, opt => opt.MapFrom(src => src.Centro.Nombre))
+               .ForMember(dest => dest.DiagnosticoNombre, opt => opt.MapFrom(src => src.Diagnostico.Nombre))
+               .ForMember(dest => dest.VinculoInstitucionalNombre, opt => opt.MapFrom(src => src.VinculoInstitucional.Nombre));
+
+            CreateMap<PacienteCreateDto, Paciente>();
+            CreateMap<PacienteUpdateDto, Paciente>();
 
         }
     }

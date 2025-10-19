@@ -65,7 +65,6 @@ namespace ApiSitea.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
 
-        // 🔍 Nuevo método: búsqueda parcial por nombre
         public async Task<IEnumerable<Medicamento>> SearchByNameAsync(string searchTerm)
         {
             return await _context.Medicamentos

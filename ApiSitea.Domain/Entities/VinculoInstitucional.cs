@@ -10,5 +10,7 @@ namespace ApiSitea.Domain.Entities
     {
         public Guid Id { get; set; } = Guid.NewGuid();
         public string Nombre { get; set; } = string.Empty;
+
+        public ICollection<Paciente> Pacientes { get; set; } = new List<Paciente>();
     }
 }

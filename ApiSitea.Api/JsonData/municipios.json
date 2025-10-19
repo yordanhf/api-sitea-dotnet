@@ -1,0 +1,897 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pinar del Río",
+    "provinciaId": 1
+  },
+  {
+    "id": 2,
+    "nombre": "Consolación del Sur",
+    "provinciaId": 1
+  },
+  {
+    "id": 3,
+    "nombre": "Viñales",
+    "provinciaId": 1
+  },
+  {
+    "id": 4,
+    "nombre": "San Luis",
+    "provinciaId": 1
+  },
+  {
+    "id": 5,
+    "nombre": "San Juan y Martínez",
+    "provinciaId": 1
+  },
+  {
+    "id": 6,
+    "nombre": "Los Palacios",
+    "provinciaId": 1
+  },
+  {
+    "id": 7,
+    "nombre": "La Palma",
+    "provinciaId": 1
+  },
+  {
+    "id": 8,
+    "nombre": "Minas de Matahambre",
+    "provinciaId": 1
+  },
+  {
+    "id": 9,
+    "nombre": "Guane",
+    "provinciaId": 1
+  },
+  {
+    "id": 10,
+    "nombre": "Sandino",
+    "provinciaId": 1
+  },
+  {
+    "id": 11,
+    "nombre": "Mantua",
+    "provinciaId": 1
+  },
+
+  {
+    "id": 12,
+    "nombre": "Artemisa",
+    "provinciaId": 2
+  },
+  {
+    "id": 13,
+    "nombre": "Alquízar",
+    "provinciaId": 2
+  },
+  {
+    "id": 14,
+    "nombre": "Bauta",
+    "provinciaId": 2
+  },
+  {
+    "id": 15,
+    "nombre": "Caimito",
+    "provinciaId": 2
+  },
+  {
+    "id": 16,
+    "nombre": "Guanajay",
+    "provinciaId": 2
+  },
+  {
+    "id": 17,
+    "nombre": "Güira de Melena",
+    "provinciaId": 2
+  },
+  {
+    "id": 18,
+    "nombre": "Mariel",
+    "provinciaId": 2
+  },
+  {
+    "id": 19,
+    "nombre": "San Antonio de los Baños",
+    "provinciaId": 2
+  },
+  {
+    "id": 20,
+    "nombre": "Bahía Honda",
+    "provinciaId": 2
+  },
+  {
+    "id": 21,
+    "nombre": "Candelaria",
+    "provinciaId": 2
+  },
+  {
+    "id": 22,
+    "nombre": "San Cristóbal",
+    "provinciaId": 2
+  },
+
+  {
+    "id": 23,
+    "nombre": "Plaza de la Revolución",
+    "provinciaId": 3
+  },
+  {
+    "id": 24,
+    "nombre": "Centro Habana",
+    "provinciaId": 3
+  },
+  {
+    "id": 25,
+    "nombre": "Habana Vieja",
+    "provinciaId": 3
+  },
+  {
+    "id": 26,
+    "nombre": "Cerro",
+    "provinciaId": 3
+  },
+  {
+    "id": 27,
+    "nombre": "Diez de Octubre",
+    "provinciaId": 3
+  },
+  {
+    "id": 28,
+    "nombre": "La Lisa",
+    "provinciaId": 3
+  },
+  {
+    "id": 29,
+    "nombre": "Marianao",
+    "provinciaId": 3
+  },
+  {
+    "id": 30,
+    "nombre": "Playa",
+    "provinciaId": 3
+  },
+  {
+    "id": 31,
+    "nombre": "Boyeros",
+    "provinciaId": 3
+  },
+  {
+    "id": 32,
+    "nombre": "Arroyo Naranjo",
+    "provinciaId": 3
+  },
+  {
+    "id": 33,
+    "nombre": "San Miguel del Padrón",
+    "provinciaId": 3
+  },
+  {
+    "id": 34,
+    "nombre": "Cotorro",
+    "provinciaId": 3
+  },
+  {
+    "id": 35,
+    "nombre": "Regla",
+    "provinciaId": 3
+  },
+  {
+    "id": 36,
+    "nombre": "Guanabacoa",
+    "provinciaId": 3
+  },
+  {
+    "id": 37,
+    "nombre": "Habana del Este",
+    "provinciaId": 3
+  },
+
+  {
+    "id": 38,
+    "nombre": "San José de las Lajas",
+    "provinciaId": 4
+  },
+  {
+    "id": 39,
+    "nombre": "Bejucal",
+    "provinciaId": 4
+  },
+  {
+    "id": 40,
+    "nombre": "Jaruco",
+    "provinciaId": 4
+  },
+  {
+    "id": 41,
+    "nombre": "Madruga",
+    "provinciaId": 4
+  },
+  {
+    "id": 42,
+    "nombre": "Melena del Sur",
+    "provinciaId": 4
+  },
+  {
+    "id": 43,
+    "nombre": "Nueva Paz",
+    "provinciaId": 4
+  },
+  {
+    "id": 44,
+    "nombre": "Quivicán",
+    "provinciaId": 4
+  },
+  {
+    "id": 45,
+    "nombre": "San Nicolás",
+    "provinciaId": 4
+  },
+  {
+    "id": 46,
+    "nombre": "Santa Cruz del Norte",
+    "provinciaId": 4
+  },
+  {
+    "id": 47,
+    "nombre": "Batabanó",
+    "provinciaId": 4
+  },
+  {
+    "id": 48,
+    "nombre": "Güines",
+    "provinciaId": 4
+  },
+
+  {
+    "id": 49,
+    "nombre": "Matanzas",
+    "provinciaId": 5
+  },
+  {
+    "id": 50,
+    "nombre": "Cárdenas",
+    "provinciaId": 5
+  },
+  {
+    "id": 51,
+    "nombre": "Colón",
+    "provinciaId": 5
+  },
+  {
+    "id": 52,
+    "nombre": "Jovellanos",
+    "provinciaId": 5
+  },
+  {
+    "id": 53,
+    "nombre": "Perico",
+    "provinciaId": 5
+  },
+  {
+    "id": 54,
+    "nombre": "Calimete",
+    "provinciaId": 5
+  },
+  {
+    "id": 55,
+    "nombre": "Los Arabos",
+    "provinciaId": 5
+  },
+  {
+    "id": 56,
+    "nombre": "Pedro Betancourt",
+    "provinciaId": 5
+  },
+  {
+    "id": 57,
+    "nombre": "Limonar",
+    "provinciaId": 5
+  },
+  {
+    "id": 58,
+    "nombre": "Unión de Reyes",
+    "provinciaId": 5
+  },
+  {
+    "id": 59,
+    "nombre": "Martí",
+    "provinciaId": 5
+  },
+  {
+    "id": 60,
+    "nombre": "Máximo Gómez",
+    "provinciaId": 5
+  },
+  {
+    "id": 61,
+    "nombre": "Ciénaga de Zapata",
+    "provinciaId": 5
+  },
+
+  {
+    "id": 62,
+    "nombre": "Cienfuegos",
+    "provinciaId": 6
+  },
+  {
+    "id": 63,
+    "nombre": "Abreus",
+    "provinciaId": 6
+  },
+  {
+    "id": 64,
+    "nombre": "Aguada de Pasajeros",
+    "provinciaId": 6
+  },
+  {
+    "id": 65,
+    "nombre": "Cruces",
+    "provinciaId": 6
+  },
+  {
+    "id": 66,
+    "nombre": "Cumanayagua",
+    "provinciaId": 6
+  },
+  {
+    "id": 67,
+    "nombre": "Lajas",
+    "provinciaId": 6
+  },
+  {
+    "id": 68,
+    "nombre": "Palmira",
+    "provinciaId": 6
+  },
+  {
+    "id": 69,
+    "nombre": "Rodas",
+    "provinciaId": 6
+  },
+
+  {
+    "id": 70,
+    "nombre": "Santa Clara",
+    "provinciaId": 7
+  },
+  {
+    "id": 71,
+    "nombre": "Camajuaní",
+    "provinciaId": 7
+  },
+  {
+    "id": 72,
+    "nombre": "Caibarién",
+    "provinciaId": 7
+  },
+  {
+    "id": 73,
+    "nombre": "Cifuentes",
+    "provinciaId": 7
+  },
+  {
+    "id": 74,
+    "nombre": "Corralillo",
+    "provinciaId": 7
+  },
+  {
+    "id": 75,
+    "nombre": "Encrucijada",
+    "provinciaId": 7
+  },
+  {
+    "id": 76,
+    "nombre": "Manicaragua",
+    "provinciaId": 7
+  },
+  {
+    "id": 77,
+    "nombre": "Placetas",
+    "provinciaId": 7
+  },
+  {
+    "id": 78,
+    "nombre": "Quemado de Güines",
+    "provinciaId": 7
+  },
+  {
+    "id": 79,
+    "nombre": "Ranchuelo",
+    "provinciaId": 7
+  },
+  {
+    "id": 80,
+    "nombre": "Remedios",
+    "provinciaId": 7
+  },
+  {
+    "id": 81,
+    "nombre": "Sagua la Grande",
+    "provinciaId": 7
+  },
+  {
+    "id": 82,
+    "nombre": "Santo Domingo",
+    "provinciaId": 7
+  },
+
+  {
+    "id": 83,
+    "nombre": "Sancti Spíritus",
+    "provinciaId": 8
+  },
+  {
+    "id": 84,
+    "nombre": "Cabaiguán",
+    "provinciaId": 8
+  },
+  {
+    "id": 85,
+    "nombre": "Fomento",
+    "provinciaId": 8
+  },
+  {
+    "id": 86,
+    "nombre": "Jatibonico",
+    "provinciaId": 8
+  },
+  {
+    "id": 87,
+    "nombre": "La Sierpe",
+    "provinciaId": 8
+  },
+  {
+    "id": 88,
+    "nombre": "Taguasco",
+    "provinciaId": 8
+  },
+  {
+    "id": 89,
+    "nombre": "Trinidad",
+    "provinciaId": 8
+  },
+  {
+    "id": 90,
+    "nombre": "Yaguajay",
+    "provinciaId": 8
+  },
+
+  {
+    "id": 91,
+    "nombre": "Ciego de Ávila",
+    "provinciaId": 9
+  },
+  {
+    "id": 92,
+    "nombre": "Bolivia",
+    "provinciaId": 9
+  },
+  {
+    "id": 93,
+    "nombre": "Chambas",
+    "provinciaId": 9
+  },
+  {
+    "id": 94,
+    "nombre": "Ciro Redondo",
+    "provinciaId": 9
+  },
+  {
+    "id": 95,
+    "nombre": "Florencia",
+    "provinciaId": 9
+  },
+  {
+    "id": 96,
+    "nombre": "Majagua",
+    "provinciaId": 9
+  },
+  {
+    "id": 97,
+    "nombre": "Morón",
+    "provinciaId": 9
+  },
+  {
+    "id": 98,
+    "nombre": "Primero de Enero",
+    "provinciaId": 9
+  },
+  {
+    "id": 99,
+    "nombre": "Venezuela",
+    "provinciaId": 9
+  },
+  {
+    "id": 100,
+    "nombre": "Baraguá",
+    "provinciaId": 9
+  },
+
+  {
+    "id": 101,
+    "nombre": "Camagüey",
+    "provinciaId": 10
+  },
+  {
+    "id": 102,
+    "nombre": "Carlos Manuel de Céspedes",
+    "provinciaId": 10
+  },
+  {
+    "id": 103,
+    "nombre": "Esmeralda",
+    "provinciaId": 10
+  },
+  {
+    "id": 104,
+    "nombre": "Florida",
+    "provinciaId": 10
+  },
+  {
+    "id": 105,
+    "nombre": "Guáimaro",
+    "provinciaId": 10
+  },
+  {
+    "id": 106,
+    "nombre": "Jimaguayú",
+    "provinciaId": 10
+  },
+  {
+    "id": 107,
+    "nombre": "Minas",
+    "provinciaId": 10
+  },
+  {
+    "id": 108,
+    "nombre": "Najasa",
+    "provinciaId": 10
+  },
+  {
+    "id": 109,
+    "nombre": "Nuevitas",
+    "provinciaId": 10
+  },
+  {
+    "id": 110,
+    "nombre": "Santa Cruz del Sur",
+    "provinciaId": 10
+  },
+  {
+    "id": 111,
+    "nombre": "Sibanicú",
+    "provinciaId": 10
+  },
+  {
+    "id": 112,
+    "nombre": "Sierra de Cubitas",
+    "provinciaId": 10
+  },
+  {
+    "id": 113,
+    "nombre": "Vertientes",
+    "provinciaId": 10
+  },
+
+  {
+    "id": 114,
+    "nombre": "Las Tunas",
+    "provinciaId": 11
+  },
+  {
+    "id": 115,
+    "nombre": "Amancio",
+    "provinciaId": 11
+  },
+  {
+    "id": 116,
+    "nombre": "Colombia",
+    "provinciaId": 11
+  },
+  {
+    "id": 117,
+    "nombre": "Jesús Menéndez",
+    "provinciaId": 11
+  },
+  {
+    "id": 118,
+    "nombre": "Jobabo",
+    "provinciaId": 11
+  },
+  {
+    "id": 119,
+    "nombre": "Majibacoa",
+    "provinciaId": 11
+  },
+  {
+    "id": 120,
+    "nombre": "Manatí",
+    "provinciaId": 11
+  },
+  {
+    "id": 121,
+    "nombre": "Puerto Padre",
+    "provinciaId": 11
+  },
+
+  {
+    "id": 122,
+    "nombre": "Holguín",
+    "provinciaId": 12
+  },
+  {
+    "id": 123,
+    "nombre": "Antilla",
+    "provinciaId": 12
+  },
+  {
+    "id": 124,
+    "nombre": "Báguanos",
+    "provinciaId": 12
+  },
+  {
+    "id": 125,
+    "nombre": "Banes",
+    "provinciaId": 12
+  },
+  {
+    "id": 126,
+    "nombre": "Cacocum",
+    "provinciaId": 12
+  },
+  {
+    "id": 127,
+    "nombre": "Calixto García",
+    "provinciaId": 12
+  },
+  {
+    "id": 128,
+    "nombre": "Cueto",
+    "provinciaId": 12
+  },
+  {
+    "id": 129,
+    "nombre": "Frank País",
+    "provinciaId": 12
+  },
+  {
+    "id": 130,
+    "nombre": "Gibara",
+    "provinciaId": 12
+  },
+  {
+    "id": 131,
+    "nombre": "Mayarí",
+    "provinciaId": 12
+  },
+  {
+    "id": 132,
+    "nombre": "Moa",
+    "provinciaId": 12
+  },
+  {
+    "id": 133,
+    "nombre": "Rafael Freyre",
+    "provinciaId": 12
+  },
+  {
+    "id": 134,
+    "nombre": "Sagua de Tánamo",
+    "provinciaId": 12
+  },
+  {
+    "id": 135,
+    "nombre": "Urbano Noris",
+    "provinciaId": 12
+  },
+
+  {
+    "id": 136,
+    "nombre": "Bayamo",
+    "provinciaId": 13
+  },
+  {
+    "id": 137,
+    "nombre": "Bartolomé Masó",
+    "provinciaId": 13
+  },
+  {
+    "id": 138,
+    "nombre": "Buey Arriba",
+    "provinciaId": 13
+  },
+  {
+    "id": 139,
+    "nombre": "Campechuela",
+    "provinciaId": 13
+  },
+  {
+    "id": 140,
+    "nombre": "Cauto Cristo",
+    "provinciaId": 13
+  },
+  {
+    "id": 141,
+    "nombre": "Guisa",
+    "provinciaId": 13
+  },
+  {
+    "id": 142,
+    "nombre": "Jiguaní",
+    "provinciaId": 13
+  },
+  {
+    "id": 143,
+    "nombre": "Manzanillo",
+    "provinciaId": 13
+  },
+  {
+    "id": 144,
+    "nombre": "Media Luna",
+    "provinciaId": 13
+  },
+  {
+    "id": 145,
+    "nombre": "Niquero",
+    "provinciaId": 13
+  },
+  {
+    "id": 146,
+    "nombre": "Pilón",
+    "provinciaId": 13
+  },
+  {
+    "id": 147,
+    "nombre": "Río Cauto",
+    "provinciaId": 13
+  },
+  {
+    "id": 148,
+    "nombre": "Yara",
+    "provinciaId": 13
+  },
+
+  {
+    "id": 149,
+    "nombre": "Santiago de Cuba",
+    "provinciaId": 14
+  },
+  {
+    "id": 150,
+    "nombre": "Contramaestre",
+    "provinciaId": 14
+  },
+  {
+    "id": 151,
+    "nombre": "Guamá",
+    "provinciaId": 14
+  },
+  {
+    "id": 152,
+    "nombre": "Mella",
+    "provinciaId": 14
+  },
+  {
+    "id": 153,
+    "nombre": "Palma Soriano",
+    "provinciaId": 14
+  },
+  {
+    "id": 154,
+    "nombre": "San Luis",
+    "provinciaId": 14
+  },
+  {
+    "id": 155,
+    "nombre": "Segundo Frente",
+    "provinciaId": 14
+  },
+  {
+    "id": 156,
+    "nombre": "Songo-La Maya",
+    "provinciaId": 14
+  },
+  {
+    "id": 157,
+    "nombre": "Tercer Frente",
+    "provinciaId": 14
+  },
+
+  {
+    "id": 158,
+    "nombre": "Guantánamo",
+    "provinciaId": 15
+  },
+  {
+    "id": 159,
+    "nombre": "Baracoa",
+    "provinciaId": 15
+  },
+  {
+    "id": 160,
+    "nombre": "Caimanera",
+    "provinciaId": 15
+  },
+  {
+    "id": 161,
+    "nombre": "El Salvador",
+    "provinciaId": 15
+  },
+  {
+    "id": 162,
+    "nombre": "Imías",
+    "provinciaId": 15
+  },
+  {
+    "id": 163,
+    "nombre": "Maisí",
+    "provinciaId": 15
+  },
+  {
+    "id": 164,
+    "nombre": "Manuel Tames",
+    "provinciaId": 15
+  },
+  {
+    "id": 165,
+    "nombre": "Niceto Pérez",
+    "provinciaId": 15
+  },
+  {
+    "id": 166,
+    "nombre": "San Antonio del Sur",
+    "provinciaId": 15
+  },
+  {
+    "id": 167,
+    "nombre": "Yateras",
+    "provinciaId": 15
+  },
+
+  {
+    "id": 168,
+    "nombre": "Nueva Gerona",
+    "provinciaId": 16
+  },
+  {
+    "id": 169,
+    "nombre": "La Demajagua",
+    "provinciaId": 16
+  },
+  {
+    "id": 170,
+    "nombre": "Santa Fe",
+    "provinciaId": 16
+  },
+  {
+    "id": 171,
+    "nombre": "La Fe",
+    "provinciaId": 16
+  },
+  {
+    "id": 172,
+    "nombre": "MacKinley",
+    "provinciaId": 16
+  },
+  {
+    "id": 173,
+    "nombre": "Cocodrilo",
+    "provinciaId": 16
+  },
+  {
+    "id": 174,
+    "nombre": "Patria",
+    "provinciaId": 16
+  },
+  {
+    "id": 175,
+    "nombre": "Argelia Libre",
+    "provinciaId": 16
+  },
+  {
+    "id": 176,
+    "nombre": "Sierra Caballos",
+    "provinciaId": 16
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pinar del Río"
+  },
+  {
+    "id": 2,
+    "nombre": "Artemisa"
+  },
+  {
+    "id": 3,
+    "nombre": "La Habana"
+  },
+  {
+    "id": 4,
+    "nombre": "Mayabeque"
+  },
+  {
+    "id": 5,
+    "nombre": "Matanzas"
+  },
+  {
+    "id": 6,
+    "nombre": "Cienfuegos"
+  },
+  {
+    "id": 7,
+    "nombre": "Villa Clara"
+  },
+  {
+    "id": 8,
+    "nombre": "Sancti Spíritus"
+  },
+  {
+    "id": 9,
+    "nombre": "Ciego de Ávila"
+  },
+  {
+    "id": 10,
+    "nombre": "Camagüey"
+  },
+  {
+    "id": 11,
+    "nombre": "Las Tunas"
+  },
+  {
+    "id": 12,
+    "nombre": "Holguín"
+  },
+  {
+    "id": 13,
+    "nombre": "Granma"
+  },
+  {
+    "id": 14,
+    "nombre": "Santiago de Cuba"
+  },
+  {
+    "id": 15,
+    "nombre": "Guantánamo"
+  },
+  {
+    "id": 16,
+    "nombre": "Isla de la Juventud"
+  }
+]

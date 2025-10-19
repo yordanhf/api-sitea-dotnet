@@ -17,7 +17,7 @@ namespace ApiSitea.Application.Validators
                 .MaximumLength(200).WithMessage("El nombre no puede exceder 200 caracteres.");
         }
     }
-    public class AntecedentePPPUpdateDtoValidator : AbstractValidator<AntecedentePPPDto>
+    public class AntecedentePPPUpdateDtoValidator : AbstractValidator<AntecedentePPPUpdateDto>
     {
         public AntecedentePPPUpdateDtoValidator()
         {

@@ -3,6 +3,7 @@ using System;
 using ApiSitea.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ApiSitea.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251017232000_Paciente")]
+    partial class Paciente
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.9");
@@ -135,19 +138,18 @@ namespace ApiSitea.Infrastructure.Migrations
 
             modelBuilder.Entity("ApiSitea.Domain.Entities.Municipio", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER")
-                        .HasAnnotation("Relational:JsonPropertyName", "id");
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasAnnotation("Relational:JsonPropertyName", "nombre");
+                        .HasMaxLength(200)
+                        .HasColumnType("TEXT");
 
-                    b.Property<int>("ProvinciaId")
-                        .HasColumnType("INTEGER")
-                        .HasAnnotation("Relational:JsonPropertyName", "provinciaId");
+                    b.Property<string>("Provincia")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
@@ -203,8 +205,8 @@ namespace ApiSitea.Infrastructure.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("MunicipioId")
-                        .HasColumnType("INTEGER");
+                    b.Property<Guid>("MunicipioId")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Nombre")
                         .IsRequired()
@@ -214,8 +216,9 @@ namespace ApiSitea.Infrastructure.Migrations
                     b.Property<string>("Observaciones")
                         .HasColumnType("TEXT");
 
-                    b.Property<int>("ProvinciaId")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Provincia")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Raza")
                         .IsRequired()
@@ -255,28 +258,9 @@ namespace ApiSitea.Infrastructure.Migrations
 
                     b.HasIndex("Nombre");
 
-                    b.HasIndex("ProvinciaId");
-
                     b.HasIndex("VinculoInstitucionalId");
 
                     b.ToTable("Pacientes");
-                });
-
-            modelBuilder.Entity("ApiSitea.Domain.Entities.Provincia", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("INTEGER")
-                        .HasAnnotation("Relational:JsonPropertyName", "id");
-
-                    b.Property<string>("Nombre")
-                        .IsRequired()
-                        .HasColumnType("TEXT")
-                        .HasAnnotation("Relational:JsonPropertyName", "nombre");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Provincia");
                 });
 
             modelBuilder.Entity("ApiSitea.Domain.Entities.TipoExamen", b =>
@@ -342,15 +326,9 @@ namespace ApiSitea.Infrastructure.Migrations
                         .IsRequired();
 
                     b.HasOne("ApiSitea.Domain.Entities.Municipio", "Municipio")
-                        .WithMany()
+                        .WithMany("Pacientes")
                         .HasForeignKey("MunicipioId")
                         .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.HasOne("ApiSitea.Domain.Entities.Provincia", "Provincia")
-                        .WithMany()
-                        .HasForeignKey("ProvinciaId")
-                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("ApiSitea.Domain.Entities.VinculoInstitucional", "VinculoInstitucional")
@@ -365,8 +343,6 @@ namespace ApiSitea.Infrastructure.Migrations
 
                     b.Navigation("Municipio");
 
-                    b.Navigation("Provincia");
-
                     b.Navigation("VinculoInstitucional");
                 });
 
@@ -376,6 +352,11 @@ namespace ApiSitea.Infrastructure.Migrations
                 });
 
             modelBuilder.Entity("ApiSitea.Domain.Entities.Diagnostico", b =>
+                {
+                    b.Navigation("Pacientes");
+                });
+
+            modelBuilder.Entity("ApiSitea.Domain.Entities.Municipio", b =>
                 {
                     b.Navigation("Pacientes");
                 });

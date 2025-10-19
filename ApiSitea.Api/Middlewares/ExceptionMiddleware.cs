@@ -26,7 +26,7 @@ namespace ApiSitea.Api.Middlewares
                 _logger.LogWarning(knf, "Recurso no encontrado");
                 context.Response.StatusCode = (int)HttpStatusCode.NotFound;
                 context.Response.ContentType = "application/json";
-                var result = JsonSerializer.Serialize(new { Message = knf.Message });
+                var result = JsonSerializer.Serialize(new { Message = "Recurso no encontrado" });
                 await context.Response.WriteAsync(result);
             }
             catch (ValidationException vEx)
